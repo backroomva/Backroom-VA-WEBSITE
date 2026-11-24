@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enquire | Backroom VA</title>
+<meta name="description" content="Book a free discovery call with Backroom VA and tell us what you need help with.">
+<meta property="og:title" content="Enquire | Backroom VA">
+<meta property="og:description" content="Book a free discovery call with Backroom VA and tell us what you need help with.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta property="og:image" content="images/logo-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="42" height="42">Backroom VA</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="enquire.html" aria-current="page">Book a discovery call</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <div><p class="tag">Enquire</p><h1>Book your free discovery call.</h1></div>
+    <p class="lead">Tell us a little about your business and what you need help with. We will get back to you to arrange a time for your free discovery call.</p>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap grid" style="grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(24px,5vw,64px)" id="enquire-grid">
+    <div>
+      <form class="form" name="enquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="enquiry">
+        <p class="hidden"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-business">Business name</label><input id="f-business" name="business" autocomplete="organization"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-email">Email <span class="req">*</span></label><input id="f-email" type="email" name="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" name="phone" autocomplete="tel"></div>
+        </div>
+        <fieldset class="field"><legend>What do you need help with?</legend><div class="checks"><label class="check"><input type="checkbox" name="services" value="Admin support"> Admin support</label><label class="check"><input type="checkbox" name="services" value="Lead generation"> Lead generation</label><label class="check"><input type="checkbox" name="services" value="Marketing support"> Marketing support</label><label class="check"><input type="checkbox" name="services" value="Account management"> Account management</label><label class="check"><input type="checkbox" name="services" value="Not sure yet"> Not sure yet</label></div></fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-hours">Roughly how much support do you need?</label>
+            <select id="f-hours" name="hours"><option value="">Choose one</option><option>Under 10 hours</option><option>10 to 20 hours</option><option>20 to 40 hours</option><option>40+ hours / dedicated VA</option><option>Not sure yet</option></select></div>
+          <div class="field"><label for="f-start">When would you like to start?</label>
+            <select id="f-start" name="start"><option value="">Choose one</option><option>As soon as possible</option><option>Within a month</option><option>In 1 to 3 months</option><option>Just exploring</option></select></div>
+        </div>
+        <div class="field"><label for="f-msg">Tell us about the tasks you want to hand over <span class="req">*</span></label><textarea id="f-msg" name="message" required></textarea><span class="hint">A few sentences is plenty. Include any tools you use, such as your CRM or email platform.</span></div>
+        <div class="row2"><div class="field"><label for="f-contact">Best way to reach you</label>
+          <select id="f-contact" name="contact_preference"><option>Email</option><option>Phone call</option><option>Video call</option></select></div>
+          <div class="field"><label for="f-when">Best days or times for your call</label><input id="f-when" name="call_times" placeholder="For example, weekday mornings"></div></div>
+        <div><button class="btn btn-primary" type="submit">Send enquiry</button></div>
+      </form>
+      <div class="form-done" id="form-done" tabindex="-1" role="status">
+        <h3>Preview only: nothing was sent</h3>
+        <p style="margin:0">This is a preview of the form. Once the site is live on Netlify, enquiries submitted here are saved in your Netlify dashboard and visitors see the thank-you page.</p>
+      </div>
+    </div>
+    <aside class="side">
+      <h3>What happens next</h3>
+      <ul class="ticks">
+        <li>We review your enquiry and reply to arrange your free discovery call.</li>
+        <li>On the call we talk through your tasks, goals and how you like to work.</li>
+        <li>We put together tailored support and match you with the right assistant.</li>
+      </ul>
+      <p class="note" style="margin:0">Prefer email? Write to <a href="mailto:adminbackroomva@gmail.com">adminbackroomva@gmail.com</a></p>
+    </aside>
+  </div>
+</section>
+<style>@media(max-width:980px){#enquire-grid{grid-template-columns:minmax(0,1fr)!important}}</style>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="42" height="42">Backroom VA</a>
+      <p>Virtual assistants for business owners, anywhere. Admin, lead generation, marketing and account management, handled from the back room so you can run the front.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="enquire.html">Enquire</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <ul>
+        <li><a href="mailto:adminbackroomva@gmail.com">adminbackroomva@gmail.com</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/backroomva/" rel="noopener">@backroomva</a></li>
+        <li>Facebook: Backroom VA</li>
+        <li><a href="enquire.html">Book a free discovery call</a></li>
+      </ul>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Backroom VA. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
